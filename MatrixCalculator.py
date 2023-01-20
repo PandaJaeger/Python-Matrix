@@ -1,5 +1,7 @@
 import numpy
 
+#input of vectors
+
 a1 = numpy.array([-1,0,1,0,0])
 a2 = numpy.array([5,0,0,5,0])
 a3 = numpy.array([4,0,0,0,4])
@@ -16,11 +18,14 @@ q = A[0] / numpy.linalg.norm(A[0])
 Q.append(q)
 print (q)
 
+#output 1
+
 q = A[1] - numpy.dot(Q[0],A[1])*Q[0]
 q = q / numpy.linalg.norm(q)
 Q.append(q)
 print (q)
 
+#output 2
 
 q = A[2]
 for j in range (0,2):
@@ -29,7 +34,7 @@ q = q / numpy.linalg.norm(q)
 Q.append(q)
 print (q)
 
-
+#output 3
 
 v = numpy.array([-9,0,3,10,-16])
 
